@@ -47,6 +47,7 @@ Parse string into object. Does the result of `JSON.parse` has the same property 
   ```
   {"b":2,"a":{"d":2,"c":1}}
   ```
+  If a property is missing in `order`, it would be kept at the same position (index).
   
 If `options` is an array, it is used as `options.order`.
 

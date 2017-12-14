@@ -40,4 +40,9 @@ describe("stringify", () => {
     const json = stringify({a: {b: 1, c: 2}}, [["a", ["c", "b"]]]);
     assert(json === '{"a":{"c":2,"b":1}}');
   });
+  
+  it("keep unordered prop", () => {
+    const json = stringify({a: 1, b: 2, c: 3}, ["c", "a"]);
+    assert(json === '{"c":3,"b":2,"a":1}');
+  });
 });
