@@ -1,0 +1,19 @@
+{
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "rules": {
+    "no-use-before-define": [2, "nofunc"],
+    "semi": [2, "always"]
+  },
+  "extends": [
+    "eslint:recommended"
+  ],
+  "overrides": [{
+    "files": ["**/rollup.config.js", "bundle.js"],
+    "parserOptions": {
+      "sourceType": "module"
+    }
+  }]
+}

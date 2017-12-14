@@ -1,0 +1,25 @@
+{
+  "name": "ordered-json",
+  "version": "0.0.0",
+  "description": "Parse/stringify JSON and keep the order",
+  "author": "eight04 <eight04@gmail.com> (https://github.com/eight04)",
+  "bugs": "https://github.com/eight04/ordered-json/issues",
+  "license": "MIT",
+  "main": "index.js",
+  "unpkg": "dist/ordered-json.js",
+  "dependencies": {},
+  "repository": "eight04/ordered-json",
+  "scripts": {
+    "lint": "eslint **/*.js --ignore-pattern dist --cache",
+    "mocha": "mocha --require intelli-espower-loader",
+    "test": "npm run lint && npm run mocha",
+    "preversion": "npm test",
+    "postversion": "git push --follow-tags && npm publish"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.4",
+    "intelli-espower-loader": "^1.0.1",
+    "mocha": "^4.0.1",
+    "power-assert": "^1.4.4"
+  }
+}
