@@ -23,9 +23,9 @@ API reference
 
 Parse string into object. Does the result of `JSON.parse` has the same property order as `json`?
 
-### stringify(obj: any, options?: object): string
+### stringify(obj: any, options?: object | array): string
 
-`options` may contains following optional properties:
+`options` object may contains following optional properties:
 
 * `replacer` - function.
 * `space` - number | string, default to `""`.
@@ -47,6 +47,26 @@ Parse string into object. Does the result of `JSON.parse` has the same property 
   ```
   {"b":2,"a":{"d":2,"c":1}}
   ```
+  
+If `options` is an array, it is used as `options.order`.
+
+Benchmark
+---------
+See `bench/bench.js`.
+```
+====
+Start benching parse
+orderedJSON.parse x 2,398 ops/sec ±0.96% (86 runs sampled)
+JSON.parse x 20,926 ops/sec ±0.57% (89 runs sampled)
+Fastest is JSON.parse
+====
+====
+Start benching stringify
+ordered object x 4,979 ops/sec ±0.61% (90 runs sampled)
+normal object x 32,246 ops/sec ±0.35% (90 runs sampled)
+Fastest is normal object
+====
+```
 
 Changelog
 ---------
