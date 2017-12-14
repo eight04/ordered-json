@@ -1,4 +1,4 @@
-/* eslint-rules no-console: 0 */
+/* eslint no-console: 0 */
 const fs = require("fs");
 const Benchmark = require("benchmark");
 const orderedJSON = require("../index");
