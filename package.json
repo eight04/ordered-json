@@ -7,7 +7,9 @@
   "license": "MIT",
   "main": "index.js",
   "unpkg": "dist/ordered-json.js",
-  "dependencies": {},
+  "dependencies": {
+    "ordered-object": "^0.1.0"
+  },
   "repository": "eight04/ordered-json",
   "scripts": {
     "lint": "eslint **/*.js --ignore-pattern dist --cache",
