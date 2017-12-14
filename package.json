@@ -1,7 +1,7 @@
 {
   "name": "ordered-json",
   "version": "0.0.0",
-  "description": "Parse/stringify JSON and keep the order",
+  "description": "Parse/stringify JSON and keep the order of object property",
   "author": "eight04 <eight04@gmail.com> (https://github.com/eight04)",
   "bugs": "https://github.com/eight04/ordered-json/issues",
   "license": "MIT",

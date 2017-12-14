@@ -8,12 +8,11 @@ Usage
 ```js
 const orderedJSON = require("ordered-json");
 
-// {"c":3,"b":2,"a":1}
 const json = orderedJSON.stringify({a: 1, b: 2, c: 3}, {order: ["c", "b", "a"]});
+// -> {"c":3,"b":2,"a":1}
 
 const obj = orderedJSON.parse(json);
-// [3, 2, 1]
-Object.values(obj);
+Object.values(obj); // [3, 2, 1]
 ```
 
 API reference
