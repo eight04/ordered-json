@@ -53,20 +53,23 @@ If `options` is an array, it is used as `options.order`.
 Benchmark
 ---------
 See `bench/bench.js`.
+
+<!--$inline.start("cmd:node bench/bench.js|markdown:codeblock")-->
 ```
 ====
 Start benching parse
-orderedJSON.parse x 2,398 ops/sec ±0.96% (86 runs sampled)
-JSON.parse x 20,926 ops/sec ±0.57% (89 runs sampled)
+orderedJSON.parse x 2,212 ops/sec ±0.77% (89 runs sampled)
+JSON.parse x 20,714 ops/sec ±0.75% (90 runs sampled)
 Fastest is JSON.parse
 ====
 ====
 Start benching stringify
-ordered object x 4,979 ops/sec ±0.61% (90 runs sampled)
-normal object x 32,246 ops/sec ±0.35% (90 runs sampled)
+ordered object x 6,020 ops/sec ±1.15% (88 runs sampled)
+normal object x 32,244 ops/sec ±0.79% (88 runs sampled)
 Fastest is normal object
 ====
 ```
+<!--$inline.end-->
 
 Changelog
 ---------

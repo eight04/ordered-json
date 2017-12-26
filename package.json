@@ -15,7 +15,10 @@
     "lint": "eslint **/*.js --ignore-pattern dist --cache",
     "mocha": "mocha --require intelli-espower-loader",
     "test": "npm run lint && npm run mocha",
+    "bench": "node bench/bench.js > bench/bench-result.txt",
+    "build": "npm run bench && npm run build-readme",
     "preversion": "npm test",
+    "version": "npm run build && git add .",
     "postversion": "git push --follow-tags && npm publish"
   },
   "devDependencies": {
