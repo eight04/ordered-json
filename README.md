@@ -58,22 +58,27 @@ See `bench/bench.js`.
 ```
 ====
 Start benching parse
-orderedJSON.parse x 2,212 ops/sec ±0.77% (89 runs sampled)
-JSON.parse x 20,714 ops/sec ±0.75% (90 runs sampled)
+orderedJSON.parse x 2,151 ops/sec ±1.39% (88 runs sampled)
+JSON.parse x 20,828 ops/sec ±0.78% (89 runs sampled)
 Fastest is JSON.parse
 ====
 ====
 Start benching stringify
-ordered object x 6,020 ops/sec ±1.15% (88 runs sampled)
-normal object x 32,244 ops/sec ±0.79% (88 runs sampled)
+ordered object x 6,130 ops/sec ±0.59% (89 runs sampled)
+normal object x 32,280 ops/sec ±0.40% (92 runs sampled)
 Fastest is normal object
 ====
+
 ```
 <!--$inline.end-->
 
 Changelog
 ---------
 
+* 0.1.1 (Dec 26, 2017)
+
+  - Update ordered-object to 0.2.0.
+
 * 0.1.0 (Dec 14, 2017)
 
-    - First release.
+  - First release.
