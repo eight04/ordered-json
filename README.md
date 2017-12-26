@@ -58,14 +58,14 @@ See `bench/bench.js`.
 ```
 ====
 Start benching parse
-orderedJSON.parse x 2,151 ops/sec ±1.39% (88 runs sampled)
-JSON.parse x 20,828 ops/sec ±0.78% (89 runs sampled)
+orderedJSON.parse x 2,165 ops/sec ±0.61% (89 runs sampled)
+JSON.parse x 20,651 ops/sec ±1.05% (90 runs sampled)
 Fastest is JSON.parse
 ====
 ====
 Start benching stringify
-ordered object x 6,130 ops/sec ±0.59% (89 runs sampled)
-normal object x 32,280 ops/sec ±0.40% (92 runs sampled)
+ordered object x 6,087 ops/sec ±0.71% (90 runs sampled)
+normal object x 31,881 ops/sec ±0.92% (87 runs sampled)
 Fastest is normal object
 ====
 
